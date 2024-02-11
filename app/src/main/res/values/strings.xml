@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Formula App</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="btn_register">Register</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="logout">Logout</string>
+    <string name="add_f1_team">Add F1 Team</string>
+    <string name="are_they_champions">Are they champions</string>
+    <string name="view_f1_teams">View F1 teams</string>
+</resources>

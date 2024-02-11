@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color for the border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00FF37" /> <!-- Set your desired border color -->
+        </shape>
+    </item>
+
+    <!-- Image content -->
+    <item android:left="5dp" android:right="5dp" android:top="5dp" android:bottom="5dp">
+        <bitmap android:src="@drawable/test" /> <!-- Use a placeholder image here -->
+    </item>
+</layer-list>

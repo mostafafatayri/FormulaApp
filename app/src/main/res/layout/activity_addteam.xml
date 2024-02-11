@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Big title above "Team Info" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Info"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="150dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Head Cover:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+    <!--photo-->
+    <ImageView
+        android:id="@+id/imageViewTeamLogo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/image"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"
+        />
+
+    <!-- Button to select an image -->
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"/>
+    <!--end-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Name: "
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/TeamName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Name"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <!-- EditText for "Highest Position" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highest Position:"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/editTextHighestFinish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Highest Position"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Times achieved:"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/editTextHighestFinishTimes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Times achieved"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <!-- EditText for "Pole Positions" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pole Positions:"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/editTextPolePositions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Number of Pole Positions"
+            android:inputType="number"/>
+    </LinearLayout>
+
+
+
+    <!-- LinearLayout with EditText for the new field -->
+    <!-- EditText for "Fastest Lap" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fastest Lap:"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/editTextFastestLaps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Number of Fastest Laps"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <!-- RadioButton for "Add new field" -->
+    <RadioButton
+        android:id="@+id/radioButtonChampion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/are_they_champions"
+        android:textSize="18sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:id="@+id/linearLayoutChampions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Championships"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/editTextChampion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter "
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/TeamBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base:"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/BaseValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter "
+            android:inputType="text"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/TeamChief"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Chief: "
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/TeamChiefValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter "
+            android:inputType="text"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/PowerUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PowerUnit :"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/PU"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter "
+            android:inputType="text"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TechnicalChief"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technical Chief:"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/TechnicalChiefValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter "
+            android:inputType="text"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <!--Driver 1 -->
+    <LinearLayout
+        android:id="@+id/Drivers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/driverOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver 1 Photo:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="50dp"
+            />
+        <!--photo-->
+        <ImageView
+            android:id="@+id/imageViewDriverOne"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/driver"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonSelectDriverOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"/>
+        <!--Driver second-->
+    <LinearLayout
+        android:id="@+id/Drivers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/driverSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver 2 Photo:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="50dp"
+            />
+        <!--photo-->
+        <ImageView
+            android:id="@+id/imageViewDriverSecond"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/driver"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonSelectDriverSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+<!---->
+
+        <LinearLayout
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="50dp">
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Team"/>
+
+        </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

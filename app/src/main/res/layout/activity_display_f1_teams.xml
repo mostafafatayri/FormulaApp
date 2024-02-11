@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="FATAYRI RACING"
+            android:textColor="#EBF3EB"
+            android:textSize="24sp"
+            android:background="#CA0707"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Team:"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/CarImage"
+            android:layout_width="match_parent"
+            android:layout_height="321dp"
+            app:srcCompat="@drawable/mercedes" />
+
+        <TextView
+            android:id="@+id/Debut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Since Debut:"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textColor="#2C6D2E"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:elevation="2dp"
+            android:gravity="center"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#191717"/>
+
+        <TextView
+            android:id="@+id/Highest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highest Finish"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#333833"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/HighNB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1x116"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#022302"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#191717"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/PolePositions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pole Position"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#333833"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/PolePositionsNb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="129"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#022302"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="#191717" />
+
+        <TextView
+            android:id="@+id/FLap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fastest Lap"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#333833"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/FLapNb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="96"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#022302"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#191717"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/Team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team: "
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textColor="#2C6D2E"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:elevation="2dp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Driver 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="183dp"
+                    android:layout_height="271dp"
+                    android:background="@drawable/border_background"
+                    android:src="@drawable/gr" />
+
+                <TextView
+                    android:id="@+id/driverName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver 1 Name" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="1dp" />
+
+            <!-- Driver 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="183dp"
+                    android:layout_height="271dp"
+                    android:src="@drawable/lh"
+                    android:background="@drawable/border_background" />
+
+                <TextView
+                    android:id="@+id/driverName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver 2 Name" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/Championship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Constructors Championships"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#333833"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/CSValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#022302"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="#108210"
+            android:layout_marginBottom="10dp"/>
+
+        <!---->
+
+
+        <TextView
+            android:id="@+id/Base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#333833"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/BaseValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brackley"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#022302"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#191717"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/TeamChief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Chief"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#333833"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/TeamChiefValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toto Wolf"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#022302"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="#191717" />
+
+        <TextView
+            android:id="@+id/TC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technical Chief"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#333833"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/TCValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="James Alison"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#022302"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="#191717" />
+
+        <TextView
+            android:id="@+id/PowerUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power Unit"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#333833"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/PuValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mercedes"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#022302"
+            android:background="#F0F0F0"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="#191717"
+            android:layout_marginBottom="10dp"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "1022676820250",
+    "project_id": "logindemo-995fd",
+    "storage_bucket": "logindemo-995fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022676820250:android:77362d7e2ea620109e0ca3",
+        "android_client_info": {
+          "package_name": "com.example.coffeeshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG3kMVWv5m_wTxc7F6f83cJ1oj26cMD6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022676820250:android:8e9247d19de34f049e0ca3",
+        "android_client_info": {
+          "package_name": "com.example.foodapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG3kMVWv5m_wTxc7F6f83cJ1oj26cMD6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022676820250:android:7794fd417bef133a9e0ca3",
+        "android_client_info": {
+          "package_name": "com.example.formulaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG3kMVWv5m_wTxc7F6f83cJ1oj26cMD6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
