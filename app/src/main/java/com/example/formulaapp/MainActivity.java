@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Button AddTeam;
 
     Button viewTeams;
+    Button championship;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,5 +70,16 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        championship = findViewById(R.id.ChampionShip);
+        championship.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cham = new Intent(getApplicationContext(),ChampionShips.class);
+                startActivity(cham);
+                finish();
+            }
+        });
+
     }
 }

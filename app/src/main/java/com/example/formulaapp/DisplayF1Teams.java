@@ -2,12 +2,14 @@ package com.example.formulaapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -170,6 +172,8 @@ public class DisplayF1Teams extends AppCompatActivity {
 
     ImageView imageView2;
 
+    Button backButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -297,6 +301,17 @@ public class DisplayF1Teams extends AppCompatActivity {
                         Log.e("FirestoreError", "Error getting documents: ", task.getException());
                     }
                 });
+
+
+        backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent backInt = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(backInt);
+                finish();
+            }
+        });
 
 
     }

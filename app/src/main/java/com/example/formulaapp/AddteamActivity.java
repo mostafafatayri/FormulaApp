@@ -79,6 +79,7 @@ public class AddteamActivity extends AppCompatActivity {
         // activate the constructors form
         openForm = findViewById(R.id.linearLayoutChampions);
         isChampion = findViewById(R.id.radioButtonChampion);
+        boolean isTrue = false;
         isChampion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -19,6 +19,12 @@
         android:id="@+id/userDetails"/>
 
     <Button
+        android:id="@+id/ChampionShip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/championship"/>
+
+    <Button
         android:id="@+id/ViewF1Team"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
