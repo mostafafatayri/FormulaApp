@@ -63,9 +63,10 @@ public class BlankFragment2 extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_blank1, container, false);
 
-        String TeamsList[] = {"Lewis Hamilton", "George Russell", "Charles Leclerc", "Max Verstappen", "Sergio Perz", "Carlos Sainz","Daniel Ricardo","Fernando Alonso","Lance Stroll","Valteri Bottas"};
+        String TeamsList[] = {"Lewis Hamilton", "George Russell", "Charles Leclerc", "Max Verstappen", "Sergio Perz", "Carlos Sainz","Fernando Alonso","Lance Stroll",
+                "Lando Norris","Oscar Piastri","Peirre Gasly","Estaban Ocan" ,"Daniel Ricardo","Yuki tsounda", "Kevin Magnisn","Nico Hulkenberg","Alex Albon","Logan Sarg", "Valteri Bottas","Zhou Guanyo"};
 
-        int point[] ={432,400,389,350,300,289,260,240,200,150};
+        int point[] ={300,290,280,270,250,220,219,200,190,180,150,145,130,110,105,100,90,85,55,45};
         // Modify the countryList to include numbering
         String[] numberedCountryList = new String[TeamsList.length];
         for (int i = 0; i < TeamsList.length; i++) {

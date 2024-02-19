@@ -64,7 +64,7 @@ public class BlankFragment1 extends Fragment {
 
         String TeamsList[] = {"Mercedes AMG Petronas", "Red Bull", "Ferrari", "Aston Martin", "Mclaren", "Alpine F1 Team","RBVCA","Hass","Williams","Kick F1 team"};
 
-        int point[] ={432,400,389,350,300,289,260,240,200,150};
+        int point[] ={690,520,500,419,370 ,295,240,205,175, 100};
         // Modify the countryList to include numbering
         String[] numberedCountryList = new String[TeamsList.length];
         for (int i = 0; i < TeamsList.length; i++) {
