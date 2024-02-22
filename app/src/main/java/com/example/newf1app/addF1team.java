@@ -1,4 +1,6 @@
-package com.example.formulaapp;
+package com.example.newf1app;
+
+
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +22,7 @@ import com.google.firebase.storage.StorageReference;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AddteamActivity extends AppCompatActivity {
+public class addF1team extends AppCompatActivity {
     LinearLayout openForm;
     RadioButton isChampion;
     EditText highestPosition;
@@ -62,7 +64,7 @@ public class AddteamActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_addteam);
+        setContentView(R.layout.activity_add_f1team);
         // added new
         fstore = FirebaseFirestore.getInstance();
         storageReference = FirebaseStorage.getInstance().getReference();
@@ -110,11 +112,11 @@ public class AddteamActivity extends AppCompatActivity {
         startActivityForResult(intent, PICK_DRIVER_IMAGE_SECOND_REQUEST);
     }
     private void openFileChooserForDriverImage() {
-            Intent intent = new Intent();
-            intent.setType("image/*");
-            intent.setAction(Intent.ACTION_GET_CONTENT);
-            startActivityForResult(intent, PICK_DRIVER_IMAGE_REQUEST);
-        }
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(intent, PICK_DRIVER_IMAGE_REQUEST);
+    }
     // image upload
 
     private void openFileChooserForTeamLogo() {
@@ -208,7 +210,7 @@ public class AddteamActivity extends AppCompatActivity {
                                                             .addOnSuccessListener(documentReference -> {
                                                                 String documentId = documentReference.getId();
                                                                 Log.d("UploadData", "Data uploaded successfully");
-                                                                Toast.makeText(AddteamActivity.this, "Team Added Successfull.",
+                                                                Toast.makeText(addF1team.this, "Team Added Successfull.",
                                                                         Toast.LENGTH_LONG).show();
 
                                                                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);

@@ -1,4 +1,6 @@
-package com.example.formulaapp;
+package com.example.newf1app;
+
+
 
 import android.os.Bundle;
 
@@ -61,7 +63,7 @@ public class BlankFragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_blank1, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_blank, container, false);
 
         String TeamsList[] = {"Lewis Hamilton", "George Russell", "Charles Leclerc", "Max Verstappen", "Sergio Perz", "Carlos Sainz","Fernando Alonso","Lance Stroll",
                 "Lando Norris","Oscar Piastri","Peirre Gasly","Estaban Ocan" ,"Daniel Ricardo","Yuki tsounda", "Kevin Magnisn","Nico Hulkenberg","Alex Albon","Logan Sarg", "Valteri Bottas","Zhou Guanyo"};

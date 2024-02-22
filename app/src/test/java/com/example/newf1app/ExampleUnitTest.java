@@ -1,4 +1,4 @@
-package com.example.formulaapp;
+package com.example.newf1app;
 
 import org.junit.Test;
 

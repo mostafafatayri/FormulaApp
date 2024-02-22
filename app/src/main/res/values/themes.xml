@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.FormulaApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.NewF1App" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.FormulaApp" parent="Base.Theme.FormulaApp" />
+    <style name="Theme.NewF1App" parent="Base.Theme.NewF1App" />
 </resources>

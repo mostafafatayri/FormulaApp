@@ -1,4 +1,5 @@
-package com.example.formulaapp;
+package com.example.newf1app;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ChampionShips extends AppCompatActivity {
+public class Champions extends AppCompatActivity {
     Button btn ;
 
     Button btn2;
@@ -15,11 +16,11 @@ public class ChampionShips extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_champion_ships);
+        setContentView(R.layout.activity_champions);
 
         if (savedInstanceState==null){
             getSupportFragmentManager().beginTransaction()
-                    .setReorderingAllowed(true).add(R.id.FrameCon,BlankFragment1.class,null).
+                    .setReorderingAllowed(true).add(R.id.FrameCon,BlankFragment.class,null).
                     commit();
         }
 
@@ -31,7 +32,7 @@ public class ChampionShips extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 getSupportFragmentManager().beginTransaction()
-                        .setReorderingAllowed(true).replace(R.id.FrameCon,BlankFragment1.class,null).
+                        .setReorderingAllowed(true).replace(R.id.FrameCon,BlankFragment.class,null).
                         commit();
             }
         });

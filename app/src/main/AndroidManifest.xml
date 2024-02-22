@@ -10,17 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FormulaApp"
+        android:theme="@style/Theme.NewF1App"
         tools:targetApi="31">
-        <activity
-            android:name=".ChampionShips"
-            android:exported="false" />
-        <activity
-            android:name=".DisplayF1Teams"
-            android:exported="false" />
-        <activity
-            android:name=".AddteamActivity"
-            android:exported="false" />
         <activity
             android:name=".Register"
             android:exported="false" />
@@ -33,6 +24,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Champions"
+            android:exported="false" />
+        <activity
+            android:name=".viewTeams"
+            android:exported="false" />
+        <activity
+            android:name=".addF1team"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

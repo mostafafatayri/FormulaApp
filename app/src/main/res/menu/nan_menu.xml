@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_add_home_work_24"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/nav_viewCham"
+            android:icon="@drawable/baseline_analytics_24"
+            android:title="Champion ship"/>
+
+        <item
+            android:id="@+id/nav_addTeam"
+            android:icon="@drawable/outline_add_24"
+            android:title="Add F1 team"/>
+
+        <item
+            android:id="@+id/nav_aboutTeams"
+            android:icon="@drawable/baseline_arrow_outward_24"
+            android:title="View Teams"/>
+    </group>
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/baseline_cancel_24"
+                android:title="Logout"/>
+        </menu>
+
+    </item>
+
+</menu>

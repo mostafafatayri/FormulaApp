@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Formula App"
+rootProject.name = "New F1 app"
 include(":app")

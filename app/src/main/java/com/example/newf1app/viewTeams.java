@@ -1,4 +1,5 @@
-package com.example.formulaapp;
+package com.example.newf1app;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -147,7 +148,7 @@ class F1Constructor{
 }
 
 
-public class DisplayF1Teams extends AppCompatActivity {
+public class viewTeams extends AppCompatActivity {
     FirebaseAuth fAuth;
     FirebaseFirestore fstore;
 
@@ -177,7 +178,7 @@ public class DisplayF1Teams extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_f1_teams);
+        setContentView(R.layout.activity_view_teams);
         Log.d("hello wolrd", "test print");
         //db connect:
         fstore = FirebaseFirestore.getInstance();
@@ -188,7 +189,7 @@ public class DisplayF1Teams extends AppCompatActivity {
                         for (QueryDocumentSnapshot document : task.getResult()) {
                             String team = document.get("F1_Team").toString();
                             All_Teams_Data.put(team, document.getData());
-
+                            Log.d("team",  document.getData().toString());
 
                             // Print the data to the console or logcat
                             for (Map.Entry<String, Object> entry : document.getData().entrySet()) {
@@ -208,7 +209,7 @@ public class DisplayF1Teams extends AppCompatActivity {
                         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
                             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                                 Log.d("check", All_Teams_Data.toString());
+                                Log.d("check all data", All_Teams_Data.toString());
                                 // Log.d("Red bull", String.valueOf(All_Teams_Data.get("Red Bull Racing")));
                                 // Log.d("team principle ",String.valueOf(All_Teams_Data.get("Red Bull Racing").get("TeamChief")));
 
@@ -236,7 +237,7 @@ public class DisplayF1Teams extends AppCompatActivity {
                                 team.setDriverImageOne(String.valueOf(All_Teams_Data.get(selectedTeam).get("DriverTwoURL")));
                                 String driverURLTwo = String.valueOf(All_Teams_Data.get(selectedTeam).get("DriverTwoURL"));
                                 Picasso.get().load(driverURLTwo).into(imageView2);
-                              //  Log.d("the image ",String.valueOf(All_Teams_Data.get(selectedTeam).get("ImageURL")));
+                                //  Log.d("the image ",String.valueOf(All_Teams_Data.get(selectedTeam).get("ImageURL")));
 
 
                                 String stringChamp = String.valueOf(All_Teams_Data.get(selectedTeam).get("ChampionShips"));
