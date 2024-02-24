@@ -11,7 +11,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Team Info"
+            android:text="@string/team_info"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
@@ -28,7 +28,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Head Cover:"
+                android:text="@string/head_cover"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 />
@@ -51,7 +51,7 @@
             android:id="@+id/buttonSelectImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Image"
+            android:text="@string/select_image"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="10dp"/>
@@ -64,7 +64,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Team Name: "
+                android:text="@string/team_name"
                 android:textStyle="bold"
                 android:textSize="18sp"/>
             <EditText
@@ -85,7 +85,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Highest Position:"
+                android:text="@string/highest_position"
                 android:textStyle="bold"
                 android:textSize="18sp"/>
             <EditText
@@ -107,7 +107,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Times achieved:"
+                android:text="@string/times_achieved"
                 android:textStyle="bold"
                 android:textSize="18sp"/>
             <EditText
@@ -128,7 +128,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pole Positions:"
+                android:text="@string/pole_position"
                 android:textStyle="bold"
                 android:textSize="18sp"/>
             <EditText
@@ -152,7 +152,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fastest Lap:"
+                android:text="@string/fastest_lap"
                 android:textStyle="bold"
                 android:textSize="18sp"/>
             <EditText
@@ -207,7 +207,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Base:"
+                android:text="@string/base"
                 android:textStyle="bold"
                 android:textSize="18sp"/>
             <EditText
@@ -232,7 +232,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Team Chief: "
+                android:text="@string/team_chief"
                 android:textStyle="bold"
                 android:textSize="18sp"/>
             <EditText
@@ -256,7 +256,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PowerUnit :"
+                android:text="@string/powerunit"
                 android:textStyle="bold"
                 android:textSize="18sp"/>
             <EditText
@@ -279,7 +279,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Technical Chief:"
+                android:text="@string/technical_chief"
                 android:textStyle="bold"
                 android:textSize="18sp"/>
             <EditText
@@ -308,7 +308,7 @@
                 android:id="@+id/driverOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Driver 1 Photo:"
+                android:text="@string/driver_1_photo"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginLeft="50dp"
@@ -327,7 +327,7 @@
             android:id="@+id/buttonSelectDriverOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Image"
+            android:text="@string/select_image"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="10dp"/>
@@ -343,7 +343,7 @@
                 android:id="@+id/driverSecond"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Driver 2 Photo:"
+                android:text="@string/driver_2_photo"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginLeft="50dp"
@@ -362,7 +362,7 @@
             android:id="@+id/buttonSelectDriverSecond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Image"
+            android:text="@string/select_image"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="10dp"/>
@@ -393,7 +393,7 @@
                 android:id="@+id/addButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add Team"/>
+                android:text="@string/add_team"/>
 
         </LinearLayout>
 

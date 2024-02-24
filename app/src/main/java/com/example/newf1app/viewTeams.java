@@ -63,7 +63,6 @@ class F1Constructor{
     }
 
 
-
     private int HighestFinishValue;
 
     public String getPowerUnit() {

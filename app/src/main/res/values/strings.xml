@@ -19,6 +19,36 @@
 
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="logoutP">Logout</string>
+    <string name="view_teams">View Teams</string>
+    <string name="home">Home</string>
+    <string name="select_team">Select Team:</string>
+    <string name="since_debut">Since Debut:</string>
+    <string name="highest_finish">Highest Finish</string>
+    <string name="pole_position">Pole Position</string>
+    <string name="fastest_lap">Fastest Lap</string>
+    <string name="team">Team:</string>
+    <string name="constructors_championships">Constructors Championships</string>
+    <string name="base">Base</string>
+    <string name="team_chief">Team Chief</string>
+    <string name="technical_chief">Technical Chief</string>
+    <string name="power_unit">Power Unit</string>
+    <string name="back">back</string>
+    <string name="team_info">Team Info</string>
+    <string name="head_cover">Head Cover:</string>
+    <string name="select_image">Select Image</string>
+    <string name="team_name">Team Name:</string>
+    <string name="highest_position">Highest Position:</string>
+    <string name="times_achieved">Times achieved:</string>
+    <string name="powerunit">PowerUnit :</string>
+    <string name="driver_1_photo">Driver 1 Photo:</string>
+    <string name="driver_2_photo">Driver 2 Photo:</string>
+    <string name="add_team">Add Team</string>
+    <string name="constructor">Constructor</string>
+    <string name="driver">Driver</string>
+
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>

@@ -10,23 +10,41 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/baseline_add_home_work_24"
-            android:title="Home"/>
+            android:title="@string/home"/>
 
         <item
             android:id="@+id/nav_viewCham"
             android:icon="@drawable/baseline_analytics_24"
-            android:title="Champion ship"/>
+            android:title="@string/championship"/>
 
         <item
             android:id="@+id/nav_addTeam"
             android:icon="@drawable/outline_add_24"
-            android:title="Add F1 team"/>
+            android:title="@string/add_f1_team"/>
 
         <item
             android:id="@+id/nav_aboutTeams"
             android:icon="@drawable/baseline_arrow_outward_24"
-            android:title="View Teams"/>
+            android:title="@string/view_teams"/>
     </group>
+
+    <item
+        android:title="Languages: ">
+
+        <menu>
+            <item
+                android:id="@+id/nav_arbic"
+                android:icon="@drawable/sharp_123_24"
+                android:title="@string/arabic"/>
+            <item
+                android:id="@+id/nav_english"
+                android:icon="@drawable/baseline_format_color_text_24"
+                android:title="@string/english"/>
+        </menu>
+
+    </item>
+
+
     <item
         android:title="">
 
@@ -34,9 +52,12 @@
             <item
                 android:id="@+id/nav_logout"
                 android:icon="@drawable/baseline_cancel_24"
-                android:title="Logout"/>
+                android:title="@string/logoutP"/>
         </menu>
 
     </item>
+
+
+
 
 </menu>

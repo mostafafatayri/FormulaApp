@@ -8,6 +8,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -15,6 +17,8 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 //
@@ -80,22 +84,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
       }
+      if(id == R.id.nav_arbic)
+      {
+          setLocale("ar");
+
+      }
+        if(id == R.id.nav_english)
+        {
+
+            setLocale("en");
+        }
 
 
-/*
-        if(id == R.id.nav_about)
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
 
 
-        if(id == R.id.nav_logout)
-            Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show();
 
-*/
 
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 
+    private void setLocale(String languageCode) {
+        Locale locale = new Locale(languageCode);
+        Locale.setDefault(locale);
+        Resources resources = getResources();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(locale);
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
+        recreate(); // Restart activity to apply the new language
+    }
     @Override
     public void onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
